@@ -73,18 +73,62 @@
 
       <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
     </form>
-    <div id="facebook">
+<section class="main">
+                <h1>Tutorial</h1>
+                <div>
+                        <video poster="img/caratula.png" controls autoplay muted>
+                                <source src="videos/modeloBox.mp4" type="video/mp4">
+                                Su navegador no puede reproducir este formato de video
+                        </video>
+                </div>
 
-	        <div id="caja1">  <iframe src="https://www.facebook.com/plugins/video.php?height=420&href=https%3A%2F%2Fwww.facebook.com%2F100065417322678%2Fvideos%2F1993201037513074%2F&show_text=true&width=560&t=0" width="267" height="280" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-          	<div/> 	 
-
-		
-		<div class="caja2">
-			<iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F100065417322678%2Fvideos%2F2981691638783350%2F&show_text=true&width=267&t=0" width="267" height="591" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
-		</div>
+                <div class="contenedor-video">
+                        <iframe src="https://www.youtube.com/embed/AIQcuCySN_A?autoplay=1&muted=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-me>
+                </div>
+        </section> 
 
 
+
+    <!-- Messenger Plugin de chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin de chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
     </div>
+
+
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "101899972364166");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v13.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/es_ES/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+
+
+
+
+        
+
+
     <script src="js/form.js"></script>
   </body>
 </html>
