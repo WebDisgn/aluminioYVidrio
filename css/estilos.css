@@ -79,7 +79,7 @@ body {
 #submit {
     display: block;
     padding: 10px 60px;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
@@ -146,26 +146,51 @@ body {
 }
 
 
+
+#fb {
+	width: 200px;
+	height: 300px;
+	z-index: 9;
+
+}
+section {
+	padding-bottom: 100px;
+}
+
 .main{
         width:80%;
         margin:auto;
-}                                                                                                           h1{
-        text-align: center;                           }
-                                                      video{
-        width:100%;                                   }
-.contenedor-video{
-        position:relative;
-        overflow:hidden;                                      padding-top:56.25%;
-        border: 3px solid red;                        }                                                     
-.contenedor-video iframe{
-        position:absolute;                                    top:0;                                                left:0;
-        width:100%;
-        height:100%;
 }
 
-#fb {
+h1{
+        text-align: center;
+}
+
+video{
+        width:100%;
+}
+.contenedor-video{
+        position:relative;
+        overflow:hidden;
+        padding-top:56.25%;
+        border: 3px solid red;
+}
+
+.contenedor-video iframe{
+        position:absolute;
+        top:0px;
+        left:0;
+        width:100%;
+        height:100%;
+	
+}
+
+.barraAnimada{
+	border: 2px solid;
 	width: 100%;
-	height: max-content;
-	z-index: 9;
+	height: 15px;
+	background-color: rgba(0,255,0, 1);
+
+
 
 }
