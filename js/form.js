@@ -7,6 +7,7 @@ document.querySelector("#submit").addEventListener("click", e => {
   let cliente = document.querySelector("#cliente").value;
   let fecha = document.querySelector("#fecha").value;
   let hora = document.querySelector("#hora").value;
+  let direccion = document.querySelector("#direccion").value;
   let empleado = document.querySelector("#empleado").value;
   let servicio = document.querySelector("#servicio").value;
   let resp = document.querySelector("#respuesta");
@@ -23,6 +24,8 @@ document.querySelector("#submit").addEventListener("click", e => {
 		${fecha}%0A
 		*Indica la hora de tu reserva*%0A
 		${hora}%0A
+    *Indica la Direccion del lugar
+    ${direccion}%0A
 		*Empleado de preferencia*%0A
 		${empleado}%0A
 		*¿Cuál es el servicio que se desea realizar?*%0A

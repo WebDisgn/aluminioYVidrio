@@ -44,13 +44,13 @@ body {
 .formulario__parrafo {
   color: rgba(0, 0, 0, 0.5);
 }
-.formulario__input,
+.formulario__input, #direccion,
 .formulario__label {
   display: block;
   width: 100%;
   font-size: 1, 3em;
 }
-.formulario__input {
+.formulario__input, #direccion {
   padding: 10px;
   background: transparent;
   /* puedo colocar otro color pero con transparencia asi: background: rgba(0,0,0,0.1) porque sino no se ven las label, aunque ya no es necesario porque ya no estan sobre los input y ademas le quite el z-index*/
@@ -58,7 +58,7 @@ body {
   margin-bottom: 15px;
   border-radius: 10px;
 }
-.formulario__input:focus {
+.formulario__input:focus, #direccion:focus {
   /*outline: 1px solid rgba(0,0,0,0.7);*/
   outline: none;
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.7);
@@ -145,5 +145,8 @@ body {
   color: green;
 }
 
-
+.grid {
+  display: grid;
+  place-items: center; /* centra cada celda */
+}
 
