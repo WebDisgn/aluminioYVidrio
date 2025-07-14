@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
-    />
 
-    <meta property="og:url"                content="https://webdisgn.github.io/aluminioYVidrio/" />
-    <meta property="og:type"               content="website" />
-    <meta property="og:title"              content="Aluminio Vidrio Taller Artesanal" />
-    <meta property="og:description"        content="Construcciones sobre medida servicio profecional" />
-    <meta property="og:image"              content="https://webdisgn.github.io/aluminioYVidrio//presenta.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Reservas tecnico </title>
-    <link rel="stylesheet" href="css/estilos.css" />
-  </head>
-  <body>
-    <div class="grid">
+  <meta property="og:url" content="https://webdisgn.github.io/aluminioYVidrio/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Aluminio Vidrio Taller Artesanal" />
+  <meta property="og:description" content="Construcciones sobre medida servicio profecional" />
+  <meta property="og:image" content="https://webdisgn.github.io/aluminioYVidrio//presenta.png" />
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Reservas tecnico </title>
+  <link rel="stylesheet" href="css/estilos.css" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RL8L0GQENE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RL8L0GQENE');
+  </script>
+</head>
+
+<body>
+  <div class="grid">
     <form action="" class="formulario">
       <img src="logo.jpeg" class="imgLogo" />
 
@@ -29,44 +37,24 @@
       </p>
 
       <label for="cliente" class="formulario__label">¿Cuál es tu nombre?</label>
-      <input
-        id="cliente"
-        type="text"
-        class="formulario__input"
-        placeholder="Indica cuál es tu nombre completo"
-      />
+      <input id="cliente" type="text" class="formulario__input" placeholder="Indica cuál es tu nombre completo" />
 
-      <label for="fecha" class="formulario__label"
-        >Indica la fecha de tu reserva</label
-      >
-      <input
-        id="fecha"
-        type="date"
-        class="formulario__input"
-        pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}"
-      />
+      <label for="fecha" class="formulario__label">Indica la fecha de tu reserva</label>
+      <input id="fecha" type="date" class="formulario__input" pattern="[0-9]{4}-[0-9]{2}-[0-9]{2}" />
 
-      <label for="hora" class="formulario__label"
-        >Indica la hora de tu reserva</label
-      >
+      <label for="hora" class="formulario__label">Indica la hora de tu reserva</label>
       <input id="hora" type="time" class="formulario__input" />
 
-      <label for="hora" class="formulario__label"
-        >Indica la direccion</label
-      >
+      <label for="hora" class="formulario__label">Indica la direccion</label>
       <textarea name="direccion" id="direccion"></textarea>
 
-      <label for="empleado" class="formulario__label"
-        > Tecnico de preferencia</label
-      >
+      <label for="empleado" class="formulario__label"> Tecnico de preferencia</label>
       <select id="empleado" name="listaempleados" class="formulario__input">
         <option>Tecnico 1</option>
         <option>Tecnico 2</option>
       </select>
 
-      <label for="servicio" class="formulario__label"
-        >¿Cuál es el servicio que se desea realizar?</label
-      >
+      <label for="servicio" class="formulario__label">¿Cuál es el servicio que se desea realizar?</label>
       <select id="servicio" name="listaservicios" class="formulario__input">
         <option>SERVICIO 1 - VENTANAS</option>
         <option>SERVICIO 2 - PUERTAS</option>
@@ -78,7 +66,7 @@
       <button id="submit" class="formulario__submit">Enviar a WhatsApp</button>
       <div id="respuesta"></div>
     </form>
-</div>
+  </div>
 
 
 
@@ -88,10 +76,11 @@
 
 
 
- 
 
-          
 
-    <script src="js/form.js"></script>
-  </body>
+
+
+  <script src="js/form.js"></script>
+</body>
+
 </html>
